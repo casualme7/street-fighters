@@ -1,92 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="Pictures/titleIcon.ico" />
-    <link rel="stylesheet" href="style.css">
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="Pictures/titleIcon.ico"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Fighters: ITBootcamp Edition</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="volumeControl fixedDefault">
-        <label for="volumeBar">Vol.</label>
-        <input id="volumeBar" type="range" value="1" min="0" max="10">
-        <span class="volumeText">1</span>
+      <label for="volumeBar">Vol.</label>
+      <input id="volumeBar" type="range" value="1" min="0" max="10" />
+      <span class="volumeText">1</span>
     </div>
     <div class="fixedDefault voiceVolume">
-        <label for="voiceBar">Voice</label>
-        <input id="voiceBar" type="range" value="4" min="0" max="10">
-        <span class="voiceText">4</span>
+      <label for="voiceBar">Voice</label>
+      <input id="voiceBar" type="range" value="4" min="0" max="10" />
+      <span class="voiceText">4</span>
     </div>
     <div class="fixedDefault resetButton">
-        <button id="resetButton">RESET</button>
+      <button id="resetButton">RESET</button>
     </div>
-    <div id="userWelcome">
-        Welcome:
-    </div>
+    <div id="userWelcome">Welcome:</div>
     <div class="userWelcome1 fixedDefault flexic">
-        <input id="userInput" type="text" placeholder=" Enter your username">
-        <button id="startButton">Ready!</button>
+      <input id="userInput" type="text" placeholder=" Enter your username" />
+      <button id="startButton">Ready!</button>
     </div>
     <div id="mainContent">
-        <div id="Player1Icons">
-            <img id="aleksandar1" src="Pictures/Players/aleksandar.png" alt="">
-            <img id="boki1" src="Pictures/Players/boki.png" alt="">
-            <img id="djole1" src="Pictures/Players/djole.png" alt="">
-            <img id="jelena1" src="Pictures/Players/jelena.png" alt="">
-            <img id="miljan1" src="Pictures/Players/miljan.png" alt="">
-            <img id="nikola1" src="Pictures/Players/nikola.png" alt="">
-            <img id="vlada1" src="Pictures/Players/vlada.png" alt="">
-            <img id="kristijan1" src="Pictures/Players/kristian.png" alt="">
-            <img id="marija1" src="Pictures/Players/marija.png" alt="">
-            <img id="vukasinM1" src="Pictures/Players/vukasinM.png" alt="">
-            <img id="darko1" src="Pictures/Players/darko.png" alt="">
+      <div id="Player1Icons">
+        <div class="red1">
+          <img id="aleksandar1" src="Pictures/Players/aleksandar.png" alt="" />
+          <img id="boki1" src="Pictures/Players/boki.png" alt="" />
+          <img id="djole1" src="Pictures/Players/djole.png" alt="" />
+          <img id="jelena1" src="Pictures/Players/jelena.png" alt="" />
         </div>
-        <div id="VS">
-            <div class="redDiv">
-                <div class="redOutline">
-                    <div class="redInside">
-                        <span class="redRng"></span>
-                        <img class="questionRed" src="Pictures/qustionmark1.jpg" alt="">
-                        <p id="redText">Player 1</p>
-                    </div>
-                </div>
+        <div class="red2">
+          <img id="miljan1" src="Pictures/Players/miljan.png" alt="" />
+          <img id="nikola1" src="Pictures/Players/nikola.png" alt="" />
+          <img id="vlada1" src="Pictures/Players/vlada.png" alt="" />
+          <img id="kristijan1" src="Pictures/Players/kristian.png" alt="" />
+          <img id="marija1" src="Pictures/Players/marija.png" alt="" />
+          <img id="vukasinM1" src="Pictures/Players/vukasinM.png" alt="" />
+          <img id="darko1" src="Pictures/Players/darko.png" alt="" />
+        </div>
+      </div>
+      <div id="VS">
+        <div class="redDiv">
+          <div class="redOutline">
+            <div class="redInside">
+              <span class="redRng"></span>
+              <img class="questionRed" src="Pictures/qustionmark1.jpg" alt="" />
+              <p id="redText">Player 1</p>
             </div>
-            <button id="VSdiv" class="scaling">VS.</button>
-            <div class="blueDiv">
-                <div class="blueOutline">
-                    <div class="blueInside">
-                        <span class="blueRng"></span>
-                        <img class="questionBlue" src="Pictures/questionmark3.png" alt="">
-                        <p id="blueText">Player 2</p>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <button id="VSdiv" class="scaling">VS.</button>
+        <div class="blueDiv">
+          <div class="blueOutline">
+            <div class="blueInside">
+              <span class="blueRng"></span>
+              <img
+                class="questionBlue"
+                src="Pictures/questionmark3.png"
+                alt=""
+              />
+              <p id="blueText">Player 2</p>
             </div>
+          </div>
         </div>
-        <div id="Player2Icons">
-            <img id="darko2" src="Pictures/Players/darko.png" alt="">
-            <img id="vukasinM2" src="Pictures/Players/vukasinM.png" alt="">
-            <img id="marija2" src="Pictures/Players/marija.png" alt="">
-            <img id="kristijan2" src="Pictures/Players/kristian.png" alt="">
-            <img id="vlada2" src="Pictures/Players/vlada.png" alt="">
-            <img id="nikola2" src="Pictures/Players/nikola.png" alt="">
-            <img id="miljan2" src="Pictures/Players/miljan.png" alt="">
-            <img id="jelena2" src="Pictures/Players/jelena.png" alt="">
-            <img id="djole2" src="Pictures/Players/djole.png" alt="">
-            <img id="boki2" src="Pictures/Players/boki.png" alt="">
-            <img id="aleksandar2" src="Pictures/Players/aleksandar.png" alt="">
+      </div>
+      <div id="Player2Icons">
+        <div class="red1">
+          <img id="darko2" src="Pictures/Players/darko.png" alt="" />
+          <img id="vukasinM2" src="Pictures/Players/vukasinM.png" alt="" />
+          <img id="marija2" src="Pictures/Players/marija.png" alt="" />
+          <img id="kristijan2" src="Pictures/Players/kristian.png" alt="" />
         </div>
+        <div class="red2">
+          <img id="vlada2" src="Pictures/Players/vlada.png" alt="" />
+          <img id="nikola2" src="Pictures/Players/nikola.png" alt="" />
+          <img id="miljan2" src="Pictures/Players/miljan.png" alt="" />
+          <img id="jelena2" src="Pictures/Players/jelena.png" alt="" />
+          <img id="djole2" src="Pictures/Players/djole.png" alt="" />
+          <img id="boki2" src="Pictures/Players/boki.png" alt="" />
+          <img id="aleksandar2" src="Pictures/Players/aleksandar.png" alt="" />
+        </div>
+      </div>
     </div>
     <footer>MADE BY MILJAN PANTOVIC</footer>
 
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
