@@ -167,12 +167,18 @@ input {
 
 #Player1Icons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
+
+
 
 #Player2Icons {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #VS {
@@ -244,7 +250,7 @@ img:hover {
 
 footer {
     position: fixed;
-    bottom: 30px;
+    bottom: 200px;
     left: 50%;
     font-size: 40px;
     transform: translate(-50%,-50%);
