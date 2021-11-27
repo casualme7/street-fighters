@@ -114,6 +114,8 @@ vega = new Audio("Sounds/characters/vega.mp3")
 vega.volume = 0.4;
 zengief = new Audio("Sounds/characters/zengief.mp3")
 zengief.volume = 0.4;
+testyourluck = new Audio("Sounds/testyourluck.mp3")
+testyourluck.volume = 0.4;
 
 const voiceBar = document.querySelector("#voiceBar");
 const voiceText = document.querySelector(".voiceText");
@@ -130,6 +132,7 @@ voiceBar.addEventListener("change", function () {
     ryu.volume = this.value / 10;
     vega.volume = this.value / 10;
     zengief.volume = this.value / 10;
+    testyourluck.volume = this.value / 10;
     voiceText.innerText = this.value;
 })
 
@@ -149,6 +152,10 @@ const vukasinM1 = document.querySelector("#vukasinM1")
 const darko1 = document.querySelector("#darko1")
 
 const questionRed = document.querySelector(".questionRed")
+
+// JELENA OVERPOVERED
+let redOP = 0;
+let blueOP = 0;
 
 aleksandar1.addEventListener("click", function () {
     questionRed.src = "Pictures/Players/aleksandar.png"
@@ -176,6 +183,7 @@ jelena1.addEventListener("click", function () {
     theme3.play();
     chunli.play();
     redText.innerText = "MiGHTY Jelena"
+    redOP = 1;
 })
 
 miljan1.addEventListener("click", function () {
@@ -267,6 +275,7 @@ jelena2.addEventListener("click", function () {
     theme3.play();
     chunli.play();
     blueText.innerText = "MiGHTY Jelena"
+    blueOP = 1;
 })
 
 miljan2.addEventListener("click", function () {
@@ -331,9 +340,19 @@ P2WIN = 0;
 let intervalRed;
 let intervalBlue;
 
-VSdiv.addEventListener("click", function () {
+function RNG() {
     P1WIN = Math.ceil(Math.random() * 1000);
     P2WIN = Math.ceil(Math.random() * 1000);
+}
+
+VSdiv.addEventListener("click", function () {
+    RNG();
+    if (redOP >= 1) {
+        P1WIN = 1001;
+    }
+    if (blueOP >= 1) {
+        P2WIN = 1001;
+    }
     fight.play();
     setTimeout(function () {
         redDiv.classList.add("redTranslate")
@@ -380,13 +399,15 @@ VSdiv.addEventListener("click", function () {
 const resetButton = document.querySelector("#resetButton")
 
 function reset() {
+    redOP = 0;
+    blueOP = 0;
     clearInterval(intervalRed);
     clearInterval(intervalBlue);
     VSdiv.innerText = "VS."
     questionRed.src = "Pictures/qustionmark1.jpg"
     questionBlue.src = "Pictures/questionmark3.png"
-    redText.innerText = "Player 1"
-    blueText.innerText = "Player 2"
+    redText.innerText = "Player 1";
+    blueText.innerText = "Player 2";
     redDiv.classList.remove("redTranslate")
     blueDiv.classList.remove("blueTranslate")
     redOutline.classList.remove("green");
@@ -399,6 +420,7 @@ function reset() {
     VSdiv.disabled = false;
     redRng.innerText = "";
     blueRng.innerText = "";
+    testyourluck.play();
 }
 
 resetButton.addEventListener("click", function () {
