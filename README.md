@@ -1,4 +1,4 @@
-Uploded on Netlify: https://fighters-itbootcamp-edition.netlify.app/
+Hosted on Netlify: https://fighters-itbootcamp-edition.netlify.app/
 
 Sta treba modifikovati:
 
