@@ -1,3 +1,5 @@
+Uploded on Netlify: https://fighters-itbootcamp-edition.netlify.app/
+
 Sta treba modifikovati:
 
 1) Okvir "mainContent" div-a da se promeni (zna Kenny na sta mislim) 
